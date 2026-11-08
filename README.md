@@ -8,7 +8,7 @@
 
 | 你的情况 | 这样做 |
 | --- | --- |
-| **只想直接使用** | 到 [Releases 下载最新版 exe](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest)，双击运行，**无需安装 Python** |
+| **只想直接使用** | 到 [Releases 下载最新版 exe 附件](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest)（约 10 MB），双击运行，**无需安装 Python** |
 | **想看源码或二次开发** | `git clone` 本仓库后执行 `python main.py`（Python 3.10+，无需安装任何第三方库） |
 
 1. 在「**文件接收端**」Tab 点击「启动服务」，把窗口显示的 IP 告诉发送者。
@@ -102,7 +102,7 @@ office_lan_transfer/
 
 ### 方式一：直接运行编译好的 exe（推荐给普通用户）
 
-1. 从 [Releases 页面](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) 下载 `局域网办公文件传输系统.exe`，双击运行；若在本机自行编译，则进入 `dist\` 目录双击同名文件。**GitHub 仓库内不含 exe 二进制文件**，请勿在源码页寻找。
+1. 从 [Releases 页面](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) 下载最新版 **exe 附件**（约 10 MB），双击运行；若在本机自行编译，则进入 `dist\` 目录双击 `局域网办公文件传输系统.exe`。**GitHub 仓库内不含 exe 二进制文件**，请勿在源码页寻找，Release 附件的文件名以英文命名以保证各浏览器兼容。
 2. 在「文件接收端」Tab 点击「启动服务」；把窗口顶部显示的 IP 告诉发送者。
 3. 发送者在「文件发送端」Tab 填写该 IP、姓名、工号，点击「连接」即可收发文件。
 
