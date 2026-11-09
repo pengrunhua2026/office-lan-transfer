@@ -1,0 +1,41 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  integration-tests:
+    name: Python ${{ matrix.python-version }} / Windows
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.12']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Show environment
+        shell: bash
+        run: |
+          python --version
+          python -c "import tkinter, socket; print('stdlib ready')"
+
+      - name: Run integration tests
+        shell: bash
+        run: |
+          set -e
+          python tests/test_integration.py
+          python tests/test_dir_submit.py
+          python tests/test_push_dir.py
+          python tests/test_queue.py

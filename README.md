@@ -2,7 +2,7 @@
 
 > **一个程序、两个标签页、零第三方依赖**：在同一局域网内完成文件**下发**与**提交**，全中文界面，双击即用。
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/) [![Dependencies](https://img.shields.io/badge/deps-standard%20library%20only-brightgreen.svg)](#) [![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](#) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Download](https://img.shields.io/badge/download-Releases-orange.svg)](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/) [![Dependencies](https://img.shields.io/badge/deps-standard%20library%20only-brightgreen.svg)](#) [![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](#) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Download](https://img.shields.io/badge/download-Releases-orange.svg)](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) [![Tests](https://github.com/pengrunhua2026/office-lan-transfer/actions/workflows/tests.yml/badge.svg)](https://github.com/pengrunhua2026/office-lan-transfer/actions/workflows/tests.yml)
 
 ## 30 秒快速开始
 
@@ -30,6 +30,10 @@ flowchart LR
 | 图文使用说明 | [`局域网办公文件传输系统使用说明.docx`](局域网办公文件传输系统使用说明.docx) |
 | 详细设计说明书 | [`局域网办公文件传输系统详细设计说明书.docx`](局域网办公文件传输系统详细设计说明书.docx) |
 | 免安装可执行程序 | [Releases](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) |
+| 参与贡献 | [CONTRIBUTING.md](CONTRIBUTING.md) · [行为准则](CODE_OF_CONDUCT.md) |
+| 版本记录 | [CHANGELOG.md](CHANGELOG.md) |
+
+> **English**: A zero-dependency LAN file-transfer tool built with Python + tkinter. One window, two tabs, folder transfer, queueing and versioned storage. Download the ready-to-run Windows exe from Releases; full documentation is in Chinese.
 
 > 说明：exe 等编译产物不纳入版本库，请从 Releases 下载；本地自行编译的产物位于 `dist/`。更完整的步骤见下文「四、快速开始」。
 
@@ -85,6 +89,13 @@ office_lan_transfer/
 ├── tools/
 │   ├── gen_icons.py             # 生成程序图标
 │   └── gen_version.py           # 生成版本资源文件
+├── .github/
+│   ├── ISSUE_TEMPLATE/          # 问题与功能建议模板
+│   ├── workflows/tests.yml      # GitHub Actions 自动测试
+│   └── pull_request_template.md
+├── CONTRIBUTING.md              # 贡献指南
+├── CODE_OF_CONDUCT.md           # 行为准则
+├── CHANGELOG.md                 # 更新日志
 ├── tests/
 │   ├── test_integration.py      # 端到端集成测试
 │   ├── test_queue.py            # 排队机制测试
@@ -183,3 +194,11 @@ python tests\test_queue.py         # 并发提交排队
 - 开发者：prh
 - 版权：Copyright (C) 2026 prh
 - 技术栈：Python · tkinter · TCP Socket（标准库）
+
+## 九、参与贡献与反馈
+
+- 发现问题或有新想法，欢迎按模板提交 Issue；代码改动请先看 [CONTRIBUTING.md](CONTRIBUTING.md)。
+- 所有参与者请遵守 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)，版本变化见 [CHANGELOG.md](CHANGELOG.md)。
+- **如果这个项目对你有帮助，欢迎点一个 Star，或分享给同样需要局域网传文件的同事。**
+
+> 本项目的持续维护依赖使用者的反馈；一个具体的复现步骤，往往比一句「用不了」更能帮到所有人。
