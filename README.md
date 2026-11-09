@@ -20,6 +20,18 @@ flowchart LR
     R["接收端 Tab<br/>启动服务 · 下发文件 · 查看提交"] <-->|"TCP Socket · 同一局域网"| S["发送端 Tab<br/>填 IP 连接 · 提交文件"]
 ```
 
+## 界面一览
+
+**文件接收端**：启动 / 停止服务、查看在线发送者、下发文件或文件夹、查看实时提交队列与提交记录。
+
+![文件接收端界面](docs/screenshots/receiver-tab.png)
+
+**文件发送端**：填写接收端 IP 连接（无需注册账号）、接收下发文件、提交单个文件或整个文件夹。
+
+![文件发送端界面](docs/screenshots/sender-tab.png)
+
+> 截图中的内网 IP 与本地磁盘路径已做脱敏处理；实际使用时请填写你自己网络中的地址。
+
 **文档导航**
 
 | 想了解什么 | 看这里 |
@@ -104,6 +116,7 @@ office_lan_transfer/
 ├── build_assets/                # 图标与版本资源
 │   ├── combined.ico
 │   └── version_main.txt
+├── docs/screenshots/            # README 界面截图（已脱敏）
 ├── dist/
 │   └── 局域网办公文件传输系统.exe  # 编译产物
 └── README.md
