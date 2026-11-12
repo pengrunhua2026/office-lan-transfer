@@ -2,13 +2,13 @@
 
 > **一个程序、两个标签页、零第三方依赖**：在同一局域网内完成文件**下发**与**提交**，全中文界面，双击即用。
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/) [![Dependencies](https://img.shields.io/badge/deps-standard%20library%20only-brightgreen.svg)](#) [![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](#) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Download](https://img.shields.io/badge/download-Releases-orange.svg)](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) [![Tests](https://github.com/pengrunhua2026/office-lan-transfer/actions/workflows/tests.yml/badge.svg)](https://github.com/pengrunhua2026/office-lan-transfer/actions/workflows/tests.yml)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/) [![Dependencies](https://img.shields.io/badge/deps-standard%20library%20only-brightgreen.svg)](#) [![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)](#) [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Download](https://img.shields.io/badge/download-Releases-orange.svg)](https://github.com/pengtk2026/office-lan-transfer/releases/latest) [![Tests](https://github.com/pengtk2026/office-lan-transfer/actions/workflows/tests.yml/badge.svg)](https://github.com/pengtk2026/office-lan-transfer/actions/workflows/tests.yml)
 
 ## 30 秒快速开始
 
 | 你的情况 | 这样做 |
 | --- | --- |
-| **只想直接使用** | 到 [Releases 下载最新版 exe 附件](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest)（约 10 MB），双击运行，**无需安装 Python** |
+| **只想直接使用** | 到 [Releases 下载最新版 exe 附件](https://github.com/pengtk2026/office-lan-transfer/releases/latest)（约 10 MB），双击运行，**无需安装 Python** |
 | **想看源码或二次开发** | `git clone` 本仓库后执行 `python main.py`（Python 3.10+，无需安装任何第三方库） |
 
 1. 在「**文件接收端**」Tab 点击「启动服务」，把窗口显示的 IP 告诉发送者。
@@ -41,7 +41,7 @@ flowchart LR
 | 系统设计与协议说明 | [`design.md`](design.md) |
 | 图文使用说明 | [`局域网办公文件传输系统使用说明.docx`](局域网办公文件传输系统使用说明.docx) |
 | 详细设计说明书 | [`局域网办公文件传输系统详细设计说明书.docx`](局域网办公文件传输系统详细设计说明书.docx) |
-| 免安装可执行程序 | [Releases](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) |
+| 免安装可执行程序 | [Releases](https://github.com/pengtk2026/office-lan-transfer/releases/latest) |
 | 参与贡献 | [CONTRIBUTING.md](CONTRIBUTING.md) · [行为准则](CODE_OF_CONDUCT.md) |
 | 版本记录 | [CHANGELOG.md](CHANGELOG.md) |
 
@@ -126,7 +126,7 @@ office_lan_transfer/
 
 ### 方式一：直接运行编译好的 exe（推荐给普通用户）
 
-1. 从 [Releases 页面](https://github.com/pengrunhua2026/office-lan-transfer/releases/latest) 下载最新版 **exe 附件**（约 10 MB），双击运行；若在本机自行编译，则进入 `dist\` 目录双击 `局域网办公文件传输系统.exe`。**GitHub 仓库内不含 exe 二进制文件**，请勿在源码页寻找，Release 附件的文件名以英文命名以保证各浏览器兼容。
+1. 从 [Releases 页面](https://github.com/pengtk2026/office-lan-transfer/releases/latest) 下载最新版 **exe 附件**（约 10 MB），双击运行；若在本机自行编译，则进入 `dist\` 目录双击 `局域网办公文件传输系统.exe`。**GitHub 仓库内不含 exe 二进制文件**，请勿在源码页寻找，Release 附件的文件名以英文命名以保证各浏览器兼容。
 2. 在「文件接收端」Tab 点击「启动服务」；把窗口顶部显示的 IP 告诉发送者。
 3. 发送者在「文件发送端」Tab 填写该 IP、姓名、工号，点击「连接」即可收发文件。
 

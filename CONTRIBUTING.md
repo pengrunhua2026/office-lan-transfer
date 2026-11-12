@@ -30,7 +30,7 @@
 本项目**不需要 `pip install` 任何运行依赖**（tkinter + socket 均为标准库）。
 
 ```bash
-git clone https://github.com/pengrunhua2026/office-lan-transfer.git
+git clone https://github.com/pengtk2026/office-lan-transfer.git
 cd office-lan-transfer
 python main.py
 ```
